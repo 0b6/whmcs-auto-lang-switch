@@ -19,11 +19,18 @@ jobs:
           zip -r dist/whmcs-lang-switcher.zip . -x ".git/*" ".github/*"
           cp dist/whmcs-lang-switcher.zip dist/whmcs-lang-switcher.xpi
 
-      - name: Upload build artifacts
+      - name: Upload Chrome ZIP as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: browser-extensions
-          path: dist/
+            name: whmcs-lang-switcher-zip
+            path: dist/whmcs-lang-switcher.zip
+
+      - name: Upload Firefox XPI as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+            name: whmcs-lang-switcher-xpi
+            path: dist/whmcs-lang-switcher.xpi
+
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
