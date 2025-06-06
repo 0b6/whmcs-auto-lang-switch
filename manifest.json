@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "WHMCS 自动切换中文",
+  "version": "1.0",
+  "description": "识别 WHMCS 网站并自动切换中文，通过内容和页脚链接增强检测，防止重复跳转，增加Debug模式。",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injector.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
