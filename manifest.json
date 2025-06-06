@@ -7,6 +7,12 @@
     "storage",
     "scripting"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "whmcs_auto_lang_switch@example.com",
+      "strict_min_version": "109.0"
+    }
+  },
   "host_permissions": [
     "<all_urls>"
   ],
