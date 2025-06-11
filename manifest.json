@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "识别 WHMCS 网站并自动切换中文，通过内容和页脚链接增强检测，防止重复跳转，增加Debug模式。",
   "permissions": [
-    "storage",
-    "scripting"
+    "storage"
   ],
   "browser_specific_settings": {
     "gecko": {
