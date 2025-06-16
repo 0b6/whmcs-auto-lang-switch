@@ -11,7 +11,13 @@
 - 开启 Debug 模式，输出日志
 
 ## 安装方法
+### 自动安装
+Google浏览器：
+https://chromewebstore.google.com/detail/whmcs-%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87/aejhgkaoggplaiiopohagnmkekfaaoko  
+FireFox浏览器：
+https://addons.mozilla.org/zh-CN/firefox/addon/whmcs-%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87/
 
+### 手动安装
 1. 下载本仓库源码
 2. 打开 Chrome 或 Firefox 浏览器的扩展管理页面（chrome://extensions 或 about:addons）
 3. 开启开发者模式
